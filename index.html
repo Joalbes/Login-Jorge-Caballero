@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
 </head>
-<body display: flex class="bg-zinc-200">
-    <div id="login"></div>
-    <div id="imagen"></div>    
+
+<body class="bg-zinc-200 flex h-screen w-screen font-sans p-10">
+
+    <div id="login" class="m-3 bg-white p-10 border-solid border-2 border-slate-300 drop-shadow-2xl w-[30%] h-[100%]">
+       
+        <div id="titulo" class="border-solid  text-4xl font-bold border-b-2 border-slate-300 p-5">
+            <h1>Campux Coex</h1>
+        </div>
+
+        <div class="p-4">
+            <h1 class="text-1xl font-light">Registrarse</h1><br>
+            <label for="nombreusuario" class="font-bold ">Nombre de Usuario</label><br>
+            <input type="text" id="inombreusuario" class="border-solid border-2 border-slate-200" placeholder="Nombre de Usuario"><br><br>
+            <label for="password" class="font-bold ">Contraseña</label><br>
+            <input type="password" id="ipassword" class="border-solid border-2 border-slate-200" placeholder="Contraseña"><br><br>
+        </div>
+
+        <div class="text-center">
+            <button id="acceder" class="bg-red-700  text-white p-2 font-bold">Acceder</button>
+        </div>
+
+        <div>
+            <p class="font-bold text-red-700 m-3">¿Olvidó su nombre de usuario o contraseña?</p>
+            <p class="font-bold m-3">Algunos cursos permiten el acceso de invitados</p>
+        </div>
+
+
+    </div>
+    <div id="imagen" class="m-3 h-screen border-2 border-solid border-slate-200 w-[60%] h-[100%]">
+        <img class="h-screen" src="./assets/Captura desde 2023-02-23 10-45-11.png" alt="Imagen no esta disponible">
+    </div>
+
+
 </body>
+
 </html>
